@@ -1,0 +1,25 @@
+.image{
+    width: 100%;
+    height: 300px;
+    background-image: url('comp.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* border: 2px solid #e9385a; */
+}
+.carousel-inner img{
+    height:100%;
+    width:100%;
+}
+a,section{
+    font-style: oblique;
+    font-family: Brush Script MT;    
+    font-size:x-large;
+    font-weight: bold;
+}
+.btn-info{
+    border-radius: 5px;
+}
+#hello:hover{
+    color: white;
+    transition: 0.8s;
+}

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="jquery-3.5.1.min.js"></script>  
+</head>
+<body>
+  <!-- Header part -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark font-weight-bold bg-secondary">
+            <a class="navbar-brand font-weight-bold" href="#" >AKM World</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" id="hello" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="hello" href="#about">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#details" id="hello">Details</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="hello" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Others
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#contact">Contact</a>
+                    <a class="dropdown-item" href="#query">Raise a Query</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#foot">More</a>
+                  </div>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li> -->
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success text-white my-2 my-sm-0 font-weight-bold" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+
+          <div id="carouselExampleCaptions" class="carousel slide mb-5" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/tree1.jpg" width="1200" height="700" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Shining in the Sunlight</h5>
+                  <p>Nature in it's own charm and wonderful view</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/nature1.jpeg" width="1200" height="700" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Nature Wonder</h5>
+                  <p>A clam and wonderful evening with an beautiful endeavorment</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/spring1.jpg" width="1200" height="700" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Seasonal Magic</h5>
+                  <p>Each season brings a new joy and happiness</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- about part -->
+    <section id="about">
+      <div class="container-fluid">
+        <h1 class="bg-light text-center pt-4 bg-info"> About Me</h1>
+        <hr class="w-25 mx-auto pb-3">
+        
+        <div class="row mb-5">
+          <div class="col-lg-6 col-md-6 col-12">
+              <img src="images/comp.jpg" class="img-fluid">
+          </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <h2>Do you wanna know me?</h2>
+            <hr>
+            <p>Hello I am Amit Kumar Mitra. I am pursing B.Tech at Academy of Technology.
+              Currenty I am in my last semester and now I am doing both internship and my 
+              college and Currently now I am an intern at Persistent Systems Limited. Besides
+              all this I also love to play football and watching movies,listening music and also
+              many more things.
+            </p>
+            <button class="btn-info bg-primary" data-toggle="modal"  data-target="#modalview"> Know More</button>
+            <div class="modal" tabindex="-1" role="dialog" id="modalview">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title font-weight-bold">Skills & Projects</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="bg-primary font-weight-bolder" >Technical Skills
+                      <article>Languages: C, Java, Python, PHP, HTML, CSS, JavaScript</article>
+                      <article>Technologies: Git, GitHub, Angular, Rest API, Spring</article>
+                    </p>
+                    <p class="bg-primary font-weight-bolder" >Soft Skills
+                      <article>Good Communication Skills <br> Time Management Skills</article>
+                    </p>
+                    <p class="bg-primary font-weight-bolder">Projects
+                      <article>i) Handwriting Recognition using Machine Learning</article>
+                      <article>ii) US-GDP predition using ARIMA model</article>
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- about part end -->
+
+    <!-- info part -->
+    <section id="details">
+      <div class="container mb-4">
+        <h1 class="bg-light text-center bg-info"> Details</h1>
+        <hr class="w-25 mx-auto pb-3">
+        <div class="row mx-auto px-auto ">
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="card" style="width: 18rem;">
+                <img src="images/my_pic.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Student</h5>
+                  <p class="card-text">Current pursuing B.Tech at Academy of Technology (2016 - 2020)</p>
+                  <a class="btn btn-primary" data-toggle="collapse" href="#collapse1" role="button">Know More</a>
+                  <div class="collapse" id="collapse1">
+                    <div class="card card-body">
+                      <p class="bg-transparent">Also I have done my 10th from Krishnagar High School with 87.8%
+                        and did my 12th from Krishnagar Collegiate School with 82.7% and currently upto 7th sem my 
+                        CGPA is 8.98
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="card" style="width: 18rem;">
+                <img src="images/prof.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Professional</h5>
+                  <p class="card-text">Intern at Persistent Systems Limited (january 2020 - present) </p>
+                  <a href="#collapse2" data-toggle="collapse"  class="btn btn-primary">Know More</a>
+                  <div class="collapse" id="collapse2">
+                    <div class="card card-body">
+                      <p class="bg-transparent">Current I am an in Persistent Systems Limited. Also 
+                        I try to learn everyday something new. Though now I am an Intern. But I learned 
+                        some skills there.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+         </div>
+    </div>
+    </section>
+    <!-- info end -->
+
+    <!-- contact part -->
+    <section id="contact">
+      <div class="container-fluid">
+        <h1 class="bg-light text-center bg-info"> Contact Details</h1>
+        <hr class="w-25 mx-auto pb-3">
+      </div>
+        <div class="bg-secondary mb-5 text-center py-4">
+          <h2>+91-9851773960</h2>
+          <p>amit14mitra@gmail.com</p>
+          <p>This is my contact info</p>
+          <button class="btn-info bg-primary" data-toggle="modal"  data-target="#modalview"> Know More</button>
+          <div class="modal" tabindex="-1" role="dialog" id="modalview">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title font-weight-bold">Personal Info</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Languages Spoken: English, Hindi, Bengali<br>
+                  Hobbies: Playing Chess and Football and Sometimes reading books <br>
+                Date of Birth: 21st December 1998</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- end of contact part -->
+
+    <!-- Query section -->
+    <section id="query">
+      <div class="container">
+        <h1 class="bg-light text-center bg-info">Raise a Query</h1>
+        <hr class="w-25 mx-auto pb-3">
+        <div class="form-class w-50 mx-auto">
+          <form id="myform" method="POST">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address(*)</label>
+              <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputName">Full Name(*)</label>
+              <input type="text" class="form-control" name="name" id="exampleInputName" aria-describedby="nameHelp">
+            </div>
+            <div class="form-group">
+              <label for="exampleComment">Add a Comment</label>
+              <textarea class="form-control " id="exampleText" name="text"></textarea>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check out</label>
+            </div>
+            <button type="submit" name="submit" class="btn btn-primary" onclick="checkout()">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function checkout(){
+        var em=document.getElementById("exampleInputEmail1").value;
+         var pat=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        var nm=document.getElementById("exampleInputName").value;
+        var id=document.getElementById("exampleCheck1");
+        var mf=document.getElementById("myform");var b=pat.test(em);
+        //document.write(id.checked);
+        if(b==true && nm.length>0 && id.checked==true){
+         
+        $('#myform').submit(function(e){
+        e.preventDefault();
+        $.ajax({
+          url:'action.php',
+          type:'post',
+          data:$('#myform').serialize(),
+          success:function(){
+            alert('Form Submitted');//whatever you wanna do after the form is successfully submitted
+        }
+    });
+});
+          window.location.href='action.php'; 
+       }
+       else
+          alert("please fill the fields");
+         
+        
+        // alert("Form submitted successfully");
+       
+        //document.write(id.checked);
+      }
+    </script>
+    <!-- end of query section -->
+
+    <footer class="mt-4" id="foot">
+      <p class="text-center font-weight-bold bg-secondary">@copyright akmworld.com 2020</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
