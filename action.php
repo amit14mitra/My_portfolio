@@ -17,9 +17,9 @@
 
 <?php
 
-    // $email=$_GET['email'];
-    // $name=$_GET['name'];
-    // $text=$_GET['text'];
+    // $email=$_POST['email'];
+    // $name=$_POST['name'];
+    // $text=$_POST['text'];
     if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         echo "work done";
     }

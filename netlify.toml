@@ -1,0 +1,4 @@
+[[redirects]]
+from="/index.html"
+to="/action.php"
+status=200
